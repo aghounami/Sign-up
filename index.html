@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function refresh() {
+        window.location.reload();
+      }
+    </script>
+  </head>
+  <body
+    class="overflow-hidden h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col items-center justify-center font-mono p-0 m-0"
+  >
+    <span
+      class=" animate-spin absolute inline-flex h-full w-full rounded-full bg-gray-800 opacity-75 z-[-1]"
+    ></span>
+    <span class="relative flex h-3 w-3"> </span>
+    <img
+      src="file.png"
+      alt="logo"
+      class="absolute top-0 left-0 w-24 h-24 cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"
+      onclick="refresh()"
+    />
+    <img
+      src="file.png"
+      alt="logo"
+      class="w-100 h-100 cursor-pointer animate-bounce"
+      style="filter: drop-shadow(0 0 1.75rem rgb(81, 0, 147))"
+    />
+    <div
+      className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    ></div>
+    <div
+      class="flex border-2 border-teal-900 rounded-3xl flex-col items-center text-white justify-center shadow-slate-200 p-8 back-drop-blur-5xl"
+    >
+      <h1
+        class="text-white font-bold [text-shadow:_6px_6px_rgb(0_0_255_/_70%)] text-3xl"
+      >
+        WELCOME TO THE LOGIN PAGE
+      </h1>
+      <button
+        class="decoration-slate-900 border-2 bg-gradient-to-r font-bold from-purple-800 to-gray-800 border-purple-900 rounded-3xl px-4 py-2 my-8 text-2xl hover:scale-110 transition-transform duration-500 ease-in-out [box-shadow:_2px_2px_10px_6px_rgb(0_0_255_/_40%)]"
+      >
+        login
+      </button>
+    </div>
+  </body>
+</html>
