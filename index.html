@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       function refresh() {
@@ -14,10 +19,12 @@
   <body
     class="overflow-hidden h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col items-center justify-center font-mono p-0 m-0"
   >
-    <span
-      class=" animate-spin absolute inline-flex h-full w-full rounded-full bg-gray-800 opacity-75 z-[-1]"
-    ></span>
-    <span class="relative flex h-3 w-3"> </span>
+  <h1
+    class=" text-white font-black [text-shadow:_5px_5px_rgb(224_176_255_/_40%)] text-6xl font-['Jersey_20','sans-serif']
+     text-center"
+  >
+    WELCOME TO THE LOGIN PAGE
+  </h1>
     <img
       src="file.png"
       alt="logo"
@@ -27,25 +34,38 @@
     <img
       src="file.png"
       alt="logo"
-      class="w-100 h-100 cursor-pointer animate-bounce"
+      class="w-100 h-100 cursor-pointer"
       style="filter: drop-shadow(0 0 1.75rem rgb(81, 0, 147))"
     />
     <div
       className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     ></div>
     <div
-      class="flex border-2 border-teal-900 rounded-3xl flex-col items-center text-white justify-center shadow-slate-200 p-8 back-drop-blur-5xl"
+      class="flex flex-col items-center text-white justify-start shadow-slate-200  back-drop-blur-5xl"
     >
-      <h1
-        class="text-white font-bold [text-shadow:_6px_6px_rgb(0_0_255_/_70%)] text-3xl"
-      >
-        WELCOME TO THE LOGIN PAGE
-      </h1>
-      <button
-        class="decoration-slate-900 border-2 bg-gradient-to-r font-bold from-purple-800 to-gray-800 border-purple-900 rounded-3xl px-4 py-2 my-8 text-2xl hover:scale-110 transition-transform duration-500 ease-in-out [box-shadow:_2px_2px_10px_6px_rgb(0_0_255_/_40%)]"
-      >
-        login
-      </button>
+    <button
+    class="relative flex uppercase justify-between items-center decoration-slate-900 border-2 bg-gradient-to-r 
+           font-black border-purple-900 rounded-3xl px-3  py-2 mb-10  hover:from-gray-900 to-purple800  
+            hover:scale-11 text-white text-1xl 
+            overflow-hidden from-purple-900 transition-shadow duration-300 ease-in-out 
+            hover:[box-shadow:0_0_6px_0_rgba(88,28,155,1),0_0_6px_4px_rgba(88,28,155,1)]"
+  >
+    <!-- <span class="relative z-10"> -->
+      <p>log in</p>
+      <img src="42.png" alt="" class="w-9 h-6 pl-3" />
+      <!-- <ion-icon name="log-in-outline"></ion-icon> -->
+    </span>
+  </button>
+  
+        <p class="font-bold mb-10 text-white">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit ewkfhj dzjv gdhdfg</p>
+        <a
+          href="https://www.linkedin.com/in/abhishek-kumar-7b7b3b1b7/"
+          class="text-green-300 hover:text-green-700"
+          >Developed by Abhishek Kumar</a
+        >
+      
+
     </div>
   </body>
 </html>
+
