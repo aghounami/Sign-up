@@ -17,7 +17,19 @@
     </script>
   </head>
   <body
-    class="overflow-hidden h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col items-center justify-center font-mono p-0 m-0"
+    class="overflow-hidden justify-center h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col items-center  font-mono p-0 m-0"
+  >
+  <img
+    src="file.png"
+    alt="logo"
+    class="absolute top-0 left-0 w-24 h-24 cursor-pointer  hover:scale-110 transition-transform duration-500 ease-in-out"
+    onclick="refresh()"
+  />
+  <div
+  className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+  ></div>
+  <div
+  class="flex flex-col items-center text-white shadow-slate-200  back-drop-blur-5xl "
   >
   <h1
     class=" text-white font-black [text-shadow:_5px_5px_rgb(224_176_255_/_40%)] text-6xl font-['Jersey_20','sans-serif']
@@ -28,27 +40,15 @@
     <img
       src="file.png"
       alt="logo"
-      class="absolute top-0 left-0 w-24 h-24 cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"
-      onclick="refresh()"
-    />
-    <img
-      src="file.png"
-      alt="logo"
-      class="w-100 h-100 cursor-pointer"
+      class="w-100 h-100 "
       style="filter: drop-shadow(0 0 1.75rem rgb(81, 0, 147))"
     />
-    <div
-      className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    ></div>
-    <div
-      class="flex flex-col items-center text-white justify-start shadow-slate-200  back-drop-blur-5xl"
-    >
     <button
     class="relative flex uppercase justify-between items-center decoration-slate-900 border-2 bg-gradient-to-r 
            font-black border-purple-900 rounded-3xl px-3  py-2 mb-10  hover:from-gray-900 to-purple800  
-            hover:scale-11 text-white text-1xl 
-            overflow-hidden from-purple-900 transition-shadow duration-300 ease-in-out 
-            hover:[box-shadow:0_0_6px_0_rgba(88,28,155,1),0_0_6px_4px_rgba(88,28,155,1)]"
+             text-white text-1xl 
+            overflow-hidden from-purple-900 transition duration-300 ease-in-out 
+            hover:[box-shadow:0_0_6px_0_rgba(88,28,155,1),0_0_6px_4px_rgba(88,28,155,1)] hover:scale-110"
   >
     <!-- <span class="relative z-10"> -->
       <p>log in</p>
@@ -58,14 +58,14 @@
   </button>
   
         <p class="font-bold mb-10 text-white">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit ewkfhj dzjv gdhdfg</p>
-        <a
-          href="https://www.linkedin.com/in/abhishek-kumar-7b7b3b1b7/"
-          class="text-green-300 hover:text-green-700"
-          >Developed by Abhishek Kumar</a
-        >
-      
-
-    </div>
+        
+        
+      </div>
+      <a
+        href="https://www.linkedin.com/in/abhishek-kumar-7b7b3b1b7/"
+        class="text-green-300 hover:text-green-700 bottom-10 left-4 absolute text-xs"
+        >Developed by Abhishek Kumar</a
+      >
   </body>
 </html>
 
